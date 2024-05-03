@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+:root {
+  --bg: #f1f1f1;
+  --text-main: #313131;
+
+  --text-50: #dddddd;
+
+  --text-500: #555;
+  --primary-500: #ff27c9;
+
+  --max-width: calc(800px - 4rem);
+  --mobile-max-width: calc(100dvw);
+
+  --radius: 0.5rem;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  color: var(--text-main);
+  background: var(--bg);
+}
+.fixed-width {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+@media screen and (width <= 800px) {
+  .fixed-width {
+    max-width: var(--mobile-max-width);
+  }
+}
+.pad-x-2 {
+  padding: 0 0.5rem;
+}
+
+.pad-x-4 {
+  padding: 0 1rem;
+}
